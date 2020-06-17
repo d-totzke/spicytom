@@ -15,4 +15,4 @@ async def on_message(message):
         await message.channel.send('https://imgur.com/Ob2CHLe')
         await message.channel.send('Thats a spicy Tom!')
 
-client.run(os.environ('DISCORD_TOKEN'))
+client.run(os.environ['DISCORD_TOKEN'])
