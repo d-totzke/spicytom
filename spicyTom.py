@@ -3,9 +3,9 @@ from discord.ext import commands
 import os
 
 client = commands.Bot(command_prefix = '!')
-def spicyboi():
-	await message.channel.send('https://imgur.com/Ob2CHLe')
-    await message.channel.send('Thats a spicy Tom!')
+def spicyboi(channel):
+	await channel.send('https://imgur.com/Ob2CHLe')
+    await channel.send('Thats a spicy Tom!')
 
 @client.event
 async def on_ready():
@@ -22,7 +22,7 @@ async def on_message(message):
         await message.channel.send('Thats a spicy Tom!')
 
     if message.content == spicy:
-        spicyboi()
+        spicyboi(message.channel)
 
 @client.event
 async def on_reaction_add(reaction, user):
