@@ -18,7 +18,7 @@ async def on_message(message):
 @client.event
 async def on_reaction_add(reaction, user):
 	channel = reaction.message.channel
-	spicy = ":hot_pepper:"
+	spicy = ':hot_pepper:'
 	if reaction.emoji == spicy:
 		await client.send_message(channel, 'https://imgur.com/Ob2CHLe')
 		await client.send_message(channel, 'Thats a spicy Tom!')
