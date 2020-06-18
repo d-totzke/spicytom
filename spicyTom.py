@@ -28,6 +28,6 @@ async def on_reaction_add(reaction, user):
 	spicy = '🌶️'
 	if reaction.emoji == spicy:
 		await channel.send('https://imgur.com/Ob2CHLe')
-		await channel.send('{} says: Thats a spicy Tom! \nTo: {}'.format(user.mention, reaction.message.content))
+		await channel.send('{} says: Thats a spicy Tom! \nTo: {} {}'.format(user.mention, reaction.message.author.mention, reaction.message.content))
 
 client.run(os.environ['DISCORD_TOKEN'])
