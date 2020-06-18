@@ -15,5 +15,11 @@ async def on_message(message):
         await message.channel.send('https://imgur.com/Ob2CHLe')
         await message.channel.send('Thats a spicy Tom!')
 
-
+@client.event
+async def on_reaction_add(reaction, user)
+	channel = reaction.message.channel
+	if raction.emoji == ':hot_pepper:'
+		await client.send_message(channel, 'https://imgur.com/Ob2CHLe')
+		await client.send_message(channel, 'Thats a spicy Tom!')
+		
 client.run(os.environ['DISCORD_TOKEN'])
