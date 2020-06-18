@@ -18,6 +18,16 @@ async def on_message(message):
         await message.channel.send('Thats a spicy Tom!')
 
 @client.event
+async def on_message(message):
+	spicy = '🌶️'
+    if message.author == client.user:
+        return
+
+    if message.content == spicy:
+        await message.channel.send('https://imgur.com/Ob2CHLe')
+        await message.channel.send('Thats a spicy Tom!')
+
+@client.event
 async def on_reaction_add(reaction, user):
 	channel = reaction.message.channel
 	spicy = '🌶️'
