@@ -23,7 +23,7 @@ async def on_message(message):
         await message.channel.send('https://imgur.com/Ob2CHLe')
         await message.channel.send('Thats a spicy Tom!')
     
-     if message.content.startswith('!doug'):
+    if message.content.startswith('!doug'):
         await message.channel.send('https://tenor.com/view/fuck-you-doug-21jumpstreet-gif-18500573')
 
 @client.event
